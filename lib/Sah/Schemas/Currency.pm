@@ -6,6 +6,6 @@ package Sah::Schemas::Currency;
 1;
 # ABSTRACT: Various Sah currency schemas
 
-=head1 SEE ALSO
+=head1 append:SEE ALSO
 
 L<Sah::Schemas::CryptoCurrency>
