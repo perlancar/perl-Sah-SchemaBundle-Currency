@@ -18,7 +18,7 @@ Accept only current (not retired) codes.
 _
     match => '\A[A-Z]{3}\z',
     in => $codes,
-    'x.perl.coerce_rules' => ['str_toupper'],
+    'x.perl.coerce_rules' => ['From_str::to_upper'],
 }, {}];
 
 1;
