@@ -1,6 +1,8 @@
 package Sah::Schemas::Currency;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 1;

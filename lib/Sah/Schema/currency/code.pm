@@ -1,6 +1,8 @@
 package Sah::Schema::currency::code;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 use Locale::Codes::Currency_Codes ();
@@ -13,12 +15,17 @@ our $schema = [str => {
     summary => 'Currency code',
     description => <<'_',
 
-Accept only current (not retired) codes.
+Accept only current (not retired) codes. Code will be converted to uppercase.
 
 _
     match => '\A[A-Z]{3}\z',
     in => $codes,
     'x.perl.coerce_rules' => ['From_str::to_upper'],
+    examples => [
+        {data=>'', valid=>0},
+        {data=>'idr', valid=>1, res=>'IDR'},
+        {data=>'foo', valid=>0},
+    ],
 }, {}];
 
 1;

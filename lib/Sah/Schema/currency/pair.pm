@@ -1,6 +1,8 @@
 package Sah::Schema::currency::pair;
 
+# AUTHORITY
 # DATE
+# DIST
 # VERSION
 
 our $schema = [str => {
@@ -19,6 +21,13 @@ _
     match => qr(\A\S+/\S+\z),
     #'x.completion' => 'currency_pair',
     'x.perl.coerce_rules' => ['From_str::to_currency_pair'],
+    examples => [
+        {data=>'', valid=>0},
+        {data=>'idr', valid=>0},
+        {data=>'usd/idr', valid=>1, res=>'USD/IDR'},
+        {data=>'usd idr', valid=>0},
+        {data=>'usd/foo', valid=>0},
+    ],
 }, {}];
 
 1;
