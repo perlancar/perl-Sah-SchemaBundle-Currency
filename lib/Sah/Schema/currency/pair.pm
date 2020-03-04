@@ -24,7 +24,7 @@ _
     examples => [
         {value=>'', valid=>0},
         {value=>'idr', valid=>0},
-        {value=>'usd/idr', valid=>1, res=>'USD/IDR'},
+        {value=>'usd/idr', valid=>1, validated_value=>'USD/IDR'},
         {value=>'usd idr', valid=>0},
         {value=>'usd/foo', valid=>0},
     ],

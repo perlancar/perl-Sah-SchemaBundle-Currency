@@ -23,7 +23,7 @@ _
     'x.perl.coerce_rules' => ['From_str::to_upper'],
     examples => [
         {value=>'', valid=>0},
-        {value=>'idr', valid=>1, res=>'IDR'},
+        {value=>'idr', valid=>1, validated_value=>'IDR'},
         {value=>'foo', valid=>0},
     ],
 }, {}];
