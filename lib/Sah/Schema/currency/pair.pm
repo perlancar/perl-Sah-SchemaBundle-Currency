@@ -22,11 +22,11 @@ _
     #'x.completion' => 'currency_pair',
     'x.perl.coerce_rules' => ['From_str::to_currency_pair'],
     examples => [
-        {data=>'', valid=>0},
-        {data=>'idr', valid=>0},
-        {data=>'usd/idr', valid=>1, res=>'USD/IDR'},
-        {data=>'usd idr', valid=>0},
-        {data=>'usd/foo', valid=>0},
+        {value=>'', valid=>0},
+        {value=>'idr', valid=>0},
+        {value=>'usd/idr', valid=>1, res=>'USD/IDR'},
+        {value=>'usd idr', valid=>0},
+        {value=>'usd/foo', valid=>0},
     ],
 }, {}];
 
