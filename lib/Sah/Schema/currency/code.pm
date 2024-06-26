@@ -1,11 +1,13 @@
 package Sah::Schema::currency::code;
 
+use strict;
+
+use Locale::Codes::Currency_Codes ();
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use Locale::Codes::Currency_Codes ();
 
 my $codes = [sort keys %{ $Locale::Codes::Data{'currency'}{'code2id'}{alpha} }];
 die "Can't extract any currency codes from Locale::Codes::Currency_Codes"
@@ -26,7 +28,7 @@ _
         {value=>'idr', valid=>1, validated_value=>'IDR'},
         {value=>'foo', valid=>0},
     ],
-}, {}];
+}];
 
 1;
 # ABSTRACT:

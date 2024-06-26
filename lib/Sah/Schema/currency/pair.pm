@@ -1,5 +1,7 @@
 package Sah::Schema::currency::pair;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
@@ -28,7 +30,7 @@ _
         {value=>'usd idr', valid=>0},
         {value=>'usd/foo', valid=>0},
     ],
-}, {}];
+}];
 
 1;
 # ABSTRACT:

@@ -1,4 +1,6 @@
-package Sah::Schemas::Currency;
+package Sah::SchemaBundle::Currency;
+
+use strict;
 
 # AUTHORITY
 # DATE
@@ -10,4 +12,4 @@ package Sah::Schemas::Currency;
 
 =head1 append:SEE ALSO
 
-L<Sah::Schemas::CryptoCurrency>
+L<Sah::SchemaBundle::CryptoCurrency>
